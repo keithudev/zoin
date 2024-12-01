@@ -1,0 +1,39 @@
+{
+  "name": "zoin",
+  "description": "Create desktop apps using JavaScript!",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/keithudev/zoin",
+  "repository": {
+    "url": "https://github.com/keithudev/zoin"
+  },
+  "scripts": {
+    "build": "cmake-js compile && tsup",
+    "test": "cmake-js compile && tsup && npm link && cd test && npm link zoin && node ."
+  },
+  "binary": {
+    "napi_versions": [
+      9
+    ]
+  },
+  "keywords": [
+    "zoin",
+    "javascript",
+    "desktop"
+  ],
+  "author": "keithudev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "cmake-js": "^7.3.0",
+    "node-addon-api": "^8.2.2",
+    "node-gyp": "^10.2.0"
+  }
+}

@@ -1,0 +1,8 @@
+/dist
+/node_modules
+/test/node_modules
+/build
+/dev
+
+.env
+.DS_Store

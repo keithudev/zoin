@@ -1,0 +1,17 @@
+/src
+/node_modules
+/test
+/build
+/dev
+/lib
+/build
+
+.vscode
+.env
+.DS_Store
+
+compile.bat
+CMakeLists.txt
+
+tsconfig.json
+tsup.config.ts
